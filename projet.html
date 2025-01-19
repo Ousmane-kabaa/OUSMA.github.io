@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de l'Afrique - Voyage au Sénégal, Maroc et Égypte</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        nav {
+            background-color:#2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pays.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2c3e50;
+        }
+
+        
+        .destinations {
+            padding: 4rem 2rem;
+            background-color:wheat;
+        }
+
+        .destinations h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: sienna;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destination-card {
+
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            color:yellowgreen;
+            margin-bottom: 1rem;
+        }
+
+        .card-content p {
+            color:cadetblue;
+            line-height: 1.6;
+        }
+
+        
+        footer {
+            background-color:#2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="projet.html">Accueil</a></li>
+            <li><a href="Sénégal.html">Sénégal</a></li>
+            <li><a href="Maroc.html">Maroc</a></li>
+            <li><a href="Egypte.html">Égypte</a></li>
+            <li><a href="circuit.html">Circuits</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="Qui somme-nous.html">Qui somme-nous</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Découvrez la Magie de l'Afrique</h1>
+            <p>Explorez trois destinations extraordinaires : le Sénégal, le Maroc et l'Égypte. Des expériences uniques vous attendent.</p>
+            <a href="#destinations" class="cta-button">Découvrir nos destinations</a>
+        </div>
+    </div>
+
+    <section class="destinations" id="destinations">
+        <h2>Nos Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <a href="Sénégal.html"></a>
+                <div class="card-image" style="background-image: url(sen.jpg);"></div>
+                <div class="card-content">
+                    <h3>Sénégal</h3>
+                    <p>Découvrez la Téranga sénégalaise, entre plages paradisiaques, parcs nationaux et villages traditionnels.</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image" style="background-image: url(faz.jpg);"></div>
+                <div class="card-content">
+                    <h3>Maroc</h3>
+                    <p>Laissez-vous enchanter par les médinas colorées, les déserts majestueux et la cuisine raffinée.</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image" style="background-image: url(egy1.JPG);"></div>
+                <div class="card-content">
+                    <h3>Égypte</h3>
+                    <p>Explorez les trésors des pharaons, les pyramides millénaires et la majestueuse vallée du Nil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Découverte de l'Afrique. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
